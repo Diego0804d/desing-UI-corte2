@@ -4,6 +4,16 @@
 -- SO del servidor:              Win64
 -- HeidiSQL Versión:             12.6.0.6765
 -- --------------------------------------------------------
+USE tienda;
+DROP TABLE IF EXISTS usuarios;
+CREATE TABLE `usuarios`  (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(40) DEFAULT NULL,
+  `email` varchar(40) DEFAULT NULL,
+  `telefono` varchar(40) DEFAULT NULL,
+  `fecha_registro` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
